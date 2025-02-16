@@ -1,14 +1,17 @@
-import Footer from "@/components/Footer/Footer";
+import Navbar from "@/components/_ui/Navbar";
+import ParticleBackground from "@/components/_ui/Particle";
 import Contact from "@/pages/Contact";
 import Hero from "@/pages/Hero";
 import Proficiency from "@/pages/Proficiency";
 import Projects from "@/pages/Projects";
-import Image from "next/image";
 
 export default function Home() {
   return (
     <main className="h-full w-full">
     <div className="flex flex-col">
+      
+    <ParticleBackground />
+    <Navbar />
 
       <Hero />
        <Proficiency />
@@ -16,7 +19,6 @@ export default function Home() {
       {/*<Experience /> */}
       <Contact />
       {/* <Articles /> */}
-      <Footer/>
     </div>
   </main>
   );

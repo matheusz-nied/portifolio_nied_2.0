@@ -5,6 +5,7 @@ import Image from "next/image";
 import styles from './skill-card.module.scss';
 import { cx } from "@/utils";
 import { ButtonGreen } from "../_ui/button-green";
+import Link from "next/link";
 
 interface Position {
   x: number;
@@ -67,7 +68,7 @@ const SpotlightCard: React.FC<SpotlightCardProps> = ({
   };
 
   return (
-    <a href={link} target="_blank" rel="noopener noreferrer">
+    <Link href={link} rel="noopener noreferrer">
       <div
         ref={divRef}
         onMouseMove={handleMouseMove}
@@ -124,7 +125,7 @@ const SpotlightCard: React.FC<SpotlightCardProps> = ({
 
         </div>
       </div>
-    </a>
+    </Link>
   );
 };
 
