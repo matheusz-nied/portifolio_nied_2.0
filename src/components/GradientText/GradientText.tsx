@@ -1,14 +1,8 @@
-/*
-    jsrepo 1.36.0
-    Installed from https://reactbits.dev/ts/tailwind/
-    2-13-2025
-*/
-
 import React, { ReactNode } from 'react';
 
 interface GradientTextProps {
     children: ReactNode;
-    className?: string;
+    className?: string;  // Permite ao usuário definir tamanho e estilo
     colors?: string[];
     animationSpeed?: number;
     showBorder?: boolean;
@@ -27,11 +21,9 @@ export default function GradientText({
     };
 
     return (
-        <span // Alterado de <div> para <span>
-            className={`relative inline-block font-medium cursor-pointer ${className}`}
-        >
+        <span className={`relative inline-block cursor-pointer ${className}`}>
             {showBorder && (
-                <span // Alterado de <div> para <span>
+                <span 
                     className="absolute inset-0 bg-cover z-0 pointer-events-none animate-gradient"
                     style={{
                         ...gradientStyle,

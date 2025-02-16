@@ -1,4 +1,8 @@
-import Hero from "@/components/Hero/Hero";
+import Footer from "@/components/Footer/Footer";
+import Contact from "@/pages/Contact";
+import Hero from "@/pages/Hero";
+import Proficiency from "@/pages/Proficiency";
+import Projects from "@/pages/Projects";
 import Image from "next/image";
 
 export default function Home() {
@@ -7,12 +11,12 @@ export default function Home() {
     <div className="flex flex-col">
 
       <Hero />
-      {/* <Proficiency />
+       <Proficiency />
       <Projects/>
-      <Experience /> */}
-      {/* <Contact /> */}
+      {/*<Experience /> */}
+      <Contact />
       {/* <Articles /> */}
-      {/* <Footer/> */}
+      <Footer/>
     </div>
   </main>
   );

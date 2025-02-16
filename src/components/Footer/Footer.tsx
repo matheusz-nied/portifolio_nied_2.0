@@ -35,7 +35,7 @@ const Footer = () => {
         </div>
 
         <div className="text-[15px] text-center mt-2">
-          &copy; Matheusz.nied 2024 Inc. All rights reserved
+          &copy; Matheusz.nied 2025 Inc. All rights reserved
         </div>
       </div>
     </div>
