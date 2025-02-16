@@ -1,8 +1,5 @@
 "use client";
 import React from "react";
-import { FaSquareInstagram } from "react-icons/fa6";
-import { IoMdDownload } from "react-icons/io";
-import { RxGithubLogo, RxLinkedinLogo } from "react-icons/rx";
 import { ButtonAnimate } from "../../components/_ui/button-animate";
 import { ButtonGreen } from "../../components/_ui/button-green";
 import GradientText from "@/components/GradientText/GradientText";
