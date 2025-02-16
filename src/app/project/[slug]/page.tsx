@@ -1,6 +1,4 @@
-import Image from "next/image";
 import ProjectsData from "@/data/projects";
-import { JSX } from "react";
 import { cx } from "@/utils";
 
 import styles from '../../../components/SpotlightCard/skill-card.module.scss';
