@@ -23,10 +23,10 @@ export default function Navbar() {
 
         {/* Links - Desktop */}
         <ul className="hidden md:flex gap-8 text-lg">
-        <li><a href="/#" className="hover:text-[#03C303] transition">Início</a></li>
-        <li><a href="/#skills" className="hover:text-[#03C303] transition">Skills</a></li>
-        <li><a href="/#projects" className="hover:text-[#03C303] transition">Projetos</a></li>
-          <li><a href="/#contact" className="hover:text-[#03C303] transition">Contato</a></li>
+        <li><Link href="/#" className="hover:text-[#03C303] transition">Início</Link></li>
+        <li><Link href="/#skills" className="hover:text-[#03C303] transition">Skills</Link></li>
+        <li><Link href="/#projects" className="hover:text-[#03C303] transition">Projetos</Link></li>
+          <li><Link href="/#contact" className="hover:text-[#03C303] transition">Contato</Link></li>
         </ul>
 
         {/* Menu Hambúrguer - Mobile */}
@@ -41,10 +41,10 @@ export default function Navbar() {
       {/* Menu Mobile - aparece quando ativo */}
       {isOpen && (
         <ul className="md:hidden flex flex-col items-center gap-4 mt-4 bg-gray-800 p-4 rounded-lg">
-          <li><a href="/#"  className="block w-full text-center py-2 hover:bg-gray-700 rounded">Início</a></li>
-          <li><a href="/#skills" className="block w-full text-center py-2 hover:bg-gray-700 rounded">Sobre</a></li>
-          <li><a href="/#projects"  className="block w-full text-center py-2 hover:bg-gray-700 rounded">Serviços</a></li>
-          <li><a href="/#contact" className="block w-full text-center py-2 hover:bg-gray-700 rounded">Contato</a></li>
+          <li><Link href="/#"  className="block w-full text-center py-2 hover:bg-gray-700 rounded">Início</Link></li>
+          <li><Link href="/#skills" className="block w-full text-center py-2 hover:bg-gray-700 rounded">Sobre</Link></li>
+          <li><Link href="/#projects"  className="block w-full text-center py-2 hover:bg-gray-700 rounded">Serviços</Link></li>
+          <li><Link href="/#contact" className="block w-full text-center py-2 hover:bg-gray-700 rounded">Contato</Link></li>
         </ul>
       )}
     </nav>

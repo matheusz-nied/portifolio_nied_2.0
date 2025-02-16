@@ -31,9 +31,6 @@ const SpotlightCard: React.FC<SpotlightCardProps> = ({
   image,
   link,
   skills,
-  company,
-  location,
-  contractType,
   className = "",
   spotlightColor = "rgba(0, 224, 0, 0.25)",
 }) => {
