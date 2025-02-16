@@ -15,7 +15,7 @@ const Contact = () => {
       <p className="mt-4 text-lg">Me mande uma mensagem:</p>
       <div className="flex flex-col  sm:flex-row mt-12 justify-around w-auto"> 
                   <ButtonAnimate url="https://api.whatsapp.com/send?phone=62994395965" classname="mr-8">Diga olá</ButtonAnimate>
-                  <ButtonGreen  url="mailto:matheustae@hotmail.com" classname="ml-8">Mande um e-mail</ButtonGreen>
+                  <ButtonGreen  url="mailto:matheustae@hotmail.com" classname="ml-8  min-w-36 h-12">Mande um e-mail</ButtonGreen>
         {/* <a
           className="p-3 sm:mr-6 mt-6 min-w-32 border rounded-sm bg-[#3af525] text-slate-950 font-medium border-transparent flex items-center justify-center hover:translate-y-[-6px] transition-all ease duration-700"
           href="https://api.whatsapp.com/send?phone=62994395965"

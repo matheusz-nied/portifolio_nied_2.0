@@ -26,7 +26,7 @@ const HeroContent = () => {
           </p>
           <div className="flex justify-between mt-12 w-[20rem] md:w-[24rem]">
             <ButtonAnimate url="/files/curriculo-lates.pdf" >Download CV</ButtonAnimate>
-            <ButtonGreen url="#skills">Saber mais</ButtonGreen>
+            <ButtonGreen url="#skills" classname=" min-w-36 h-12">Saber mais</ButtonGreen>
 
 
           </div>

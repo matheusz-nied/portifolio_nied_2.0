@@ -4,6 +4,7 @@ import React, { useRef, useState } from "react";
 import Image from "next/image";
 import styles from './skill-card.module.scss';
 import { cx } from "@/utils";
+import { ButtonGreen } from "../_ui/button-green";
 
 interface Position {
   x: number;
@@ -74,7 +75,7 @@ const SpotlightCard: React.FC<SpotlightCardProps> = ({
         onBlur={handleBlur}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
-        className={`relative rounded-lg border border-neutral-700 bg-black overflow-hidden p-0 transition-transform hover:scale-105 ${className}`}
+        className={`relative rounded-lg border border-neutral-700 bg-black overflow-hidden p-0 transition-transform ${className}`}
       >
         {/* Spotlight effect */}
         <div
@@ -86,7 +87,7 @@ const SpotlightCard: React.FC<SpotlightCardProps> = ({
         />
 
         {/* Card content */}
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4 h-full">
           <Image
             src={image}
             alt={title}
@@ -94,11 +95,13 @@ const SpotlightCard: React.FC<SpotlightCardProps> = ({
             height={300}
             className=" object-cover w-full h-48"
           />
-          <div className="p-6">
+          <div className="p-6 flex flex-col justify-between h-full">
+            <div>
+
 
             <h3 className="text-xl font-semibold text-white">{title}</h3>
 
-            <div className="flex flex-wrap gap-2">
+            <div className="flex flex-wrap gap-2 mt-1 mb-3">
               {skills.map((skill, index) => (
                 <span
                   key={index}
@@ -112,6 +115,10 @@ const SpotlightCard: React.FC<SpotlightCardProps> = ({
               ))}
             </div>
             <p className="text-sm text-gray-400">{description}</p>
+            </div>
+            <div className="mt-4">
+              <ButtonGreen classname=" w-auto h-8" url="">Ver mais</ButtonGreen>
+            </div>
 
           </div>
 

@@ -51,7 +51,7 @@ const projects = [
   {
     id: 5,
     title: "Projeto 5",
-    description: "Descrição breve do projeto 5.",
+    description: "Descrição breve do projeto 5.Descrição breve do projeto 5.Descrição breve do projeto 5.Descrição breve do projeto 5.Descrição breve do projeto 5.Descrição breve do projeto 5.Descrição breve do projeto 5.Descrição breve do projeto 5.Descrição breve do projeto 5.",
     image: "/images/Nied-Notas.png",
     link: "https://github.com/seuusuario/projeto5",
     skills: ["Flutter", "Dart", "Firebase"],
@@ -76,7 +76,7 @@ export default function Projects() {
   return (
     <section className="container mx-auto px-4 mt-24 mb-16">
       <h2 className="text-5xl font-bold text-center mb-16"><GradientText>{ProjectsData.title}</GradientText></h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {projects.map((project) => (
           <SpotlightCard
             key={project.id}
@@ -88,6 +88,7 @@ export default function Projects() {
             company={project.company}
             location={project.location}
             contractType={project.contractType}
+            className="h-full"
           />
         ))}
       </div>
