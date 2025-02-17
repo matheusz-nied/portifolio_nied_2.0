@@ -15,6 +15,8 @@ export default function Proficiency() {
           <SkillCard
             key={project.id}
             title={project.title}
+            description={project.description}
+            techs={project.techs}
             image={project.image}
             skills={project.skills}
           />

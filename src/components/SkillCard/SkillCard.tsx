@@ -5,6 +5,8 @@ import Image from "next/image";
 
 interface SkillCardProps {
   title: string;
+  description: string;
+  techs: string;
   image: string;
   skills: { name: string; icon: string }[];
   className?: string;
@@ -13,6 +15,8 @@ interface SkillCardProps {
 
 const SkillCard: React.FC<SkillCardProps> = ({
   title,
+  description,
+  techs,
   image,
   skills,
   className = "",
@@ -71,8 +75,9 @@ const SkillCard: React.FC<SkillCardProps> = ({
 
       {/* Descrição extra */}
       <p className="text-gray-300 text-center text-sm mt-4">
-        Essas habilidades me permitem desenvolver soluções incríveis para web, mobile e design digital.
+        {description}
       </p>
+      <p className="text-gray-400 text-center text-sm mt-4">{techs}</p>
     </div>
   );
 };
