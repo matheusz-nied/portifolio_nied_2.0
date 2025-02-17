@@ -41,7 +41,7 @@ const SkillCard: React.FC<SkillCardProps> = ({
       onMouseMove={handleMouseMove}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      className={`relative rounded-lg border border-neutral-700 bg-black-500 overflow-hidden p-6 shadow-lg transition-transform ${className}`}
+      className={`relative rounded-lg border border-neutral-700 bg-black overflow-hidden p-6 shadow-lg transition-transform ${className}`}
     >
       {/* Efeito de iluminação */}
       <div

@@ -43,7 +43,7 @@ const ParticleBackground = () => {
         },
         modes: {
           push: {
-            quantity: 4,
+            quantity: 9,
           },
           repulse: {
             distance: 200,
@@ -57,7 +57,7 @@ const ParticleBackground = () => {
         },
         links: {
           color: "#ffffff",
-          distance: 180,
+          distance: 213,
           enable: true,
           opacity: 0.5,
           width: 1,
@@ -76,7 +76,7 @@ const ParticleBackground = () => {
           density: {
             enable: true,
           },
-          value: 80,
+          value: 113,
         },
         opacity: {
           value: 0.5,
